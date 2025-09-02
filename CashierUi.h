@@ -60,10 +60,13 @@ class CashierUi{
             {
                 vector<Student*> studentData = databaseInstance.getStudents();
                 cout << "Students List : \n";
+                hr();
+                ahr("USER DETAILS")
                 for(auto it : studentData)
                 {
                     cout << it->getUserId() << "\n";
                 }
+                hr();
                 cout << "Enter StudentId : ";
                 string studId;
                 getline(cin , studId , '\n');
@@ -80,10 +83,13 @@ class CashierUi{
             {
                 vector<Student*> studentData = databaseInstance.getStudents();
                 cout << "Students List : \n";
+                hr();
+                ahr("USER DETAILS");
                 for(auto it : studentData)
                 {
                     cout << it->getUserId() << "\n";
                 }
+                hr();
                 cout << "Enter StudentId : ";
                 string studId;
                 getline(cin , studId , '\n');
@@ -98,11 +104,14 @@ class CashierUi{
                     }
                 }
                 int size = data.size();
+                hr();
+                ahr("FINE DETAILS");
                 for(int i=0; i<size; i++)
                 {
                     cout << "ID : "<<i << "\n";
                     data[i]->explainSelf();
                 }
+                hr();
 
                 string id;
                 cout << "Enter Id to edit : ";
@@ -117,11 +126,13 @@ class CashierUi{
             else if(Option == "4")
             {
                 vector<Student*> studentData = databaseInstance.getStudents();
-                cout << "Students List : \n";
+                hr();
+                ahr("Students List ")
                 for(auto it : studentData)
                 {
                     cout << it->getUserId() << "\n";
                 }
+                hr();
                 cout << "Enter StudentId : ";
                 string studId;
                 getline(cin , studId , '\n');
@@ -136,11 +147,13 @@ class CashierUi{
                     }
                 }
                 int size = data.size();
+                hr();
                 for(int i=0; i<size; i++)
                 {
                     cout << "ID : "<<i << "\n";
                     data[i]->explainSelf();
                 }
+                hr();
 
                 string id;
                 cout << "Enter Id to edit : ";

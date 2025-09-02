@@ -24,10 +24,13 @@ class AdminUi{
             {
                 vector<Student*> studentData = databaseInstance.getStudents();
                 cout << "Students List : \n";
+                hr();
+                ahr("STUDENT LIST");
                 for(auto it : studentData)
                 {
                     cout << it->getUserId() << "\n";
                 }
+                hr();
                 cout << "Enter StudentId : ";
                 string studId;
                 getline(cin , studId , '\n');
@@ -48,6 +51,7 @@ class AdminUi{
                 {
                     it->explainSelf();
                 }
+                cout << "\n";
                 ahr("Finished DETAILS");
                 for(auto it : data.first)
                 {
@@ -60,6 +64,7 @@ class AdminUi{
                 vector<Student*> studentData = databaseInstance.getStudents();
                 cout << "Students List : \n";
                 hr();
+                ahr("STUDENT DETAIL")
                 for(auto it : studentData)
                 {
                     cout << it->getUserId() << "\n";
@@ -83,6 +88,7 @@ class AdminUi{
                 vector<Student*> studentData = databaseInstance.getStudents();
                 cout << "Students List : \n";
                 hr();
+                ahr("STUDENT DETAIL")
                 for(auto it : studentData)
                 {
                     cout << it->getUserId() << "\n";
@@ -198,6 +204,7 @@ class AdminUi{
                     vector<Fine*> ans = databaseInstance.getFineByType(type);
                     cout << "Data \n";
                     hr();
+                    ahr("FINE DETAILS")
                     for(auto it : ans)
                     {
                         it->explainSelf();

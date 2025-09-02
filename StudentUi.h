@@ -34,6 +34,7 @@ class StudentUi{
             else if(Option == "2")
             {
                 StudentData->editProfile();
+                cout << "SUCESSFULLY EDITED\n";
             }
 
             else if(Option == "3")
