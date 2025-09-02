@@ -1,0 +1,48 @@
+Student Fine Management System – Console Based Project Total Marks: 100  
+Overview 
+This system computerizes the activities of student fine management. 
+It supports Admin, Cashier, and Student roles, each with specific permissions.
+
+1. Admin (40 Marks) 
+
+• View all student payments – 5 Marks/// 
+
+• Filter payments by fine type – 5 Marks 
+• Filter payments by student – 5 Marks 
+• Filter payments by date – 5 Marks 
+
+• Filter specific fine type within date range – 5 Marks 
+
+• Add payment – 5 Marks ///
+• Update payment – 5 Marks /// 
+• Delete payment – 5 Marks ///
+
+2. Cashier (15 Marks) 
+• Add payment – 5 Marks  ///
+• Update payment – 5 Marks 
+• Delete payment – 5 Marks
+
+
+
+
+
+
+
+
+3. Student (20 Marks) 
+• View profile – 5 Marks ///
+• Edit profile – 5 Marks ///
+
+• View personal transactions – 5 Marks 
+• View current balance in the fund – 5 Marks 
+
+
+
+
+
+
+4. Common Features (10 Marks) 
+• User Registration – 5 Marks ///
+ 
+• User Login (role-based access) – 5 Marks ///
+
