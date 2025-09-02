@@ -15,7 +15,7 @@ void ahr(string str)
 
 signed main()
 {
-    ahr("fine management system");
+    ahr("FINE MANAGEMENT SYSTEM");
         UI u;
-    ahr("thanks for using");
+    ahr("THANKS FOR USING");
 }

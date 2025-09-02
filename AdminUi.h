@@ -59,10 +59,12 @@ class AdminUi{
             {
                 vector<Student*> studentData = databaseInstance.getStudents();
                 cout << "Students List : \n";
+                hr();
                 for(auto it : studentData)
                 {
                     cout << it->getUserId() << "\n";
                 }
+                hr();
                 cout << "Enter StudentId : ";
                 string studId;
                 getline(cin , studId , '\n');
@@ -71,17 +73,21 @@ class AdminUi{
                 Fine* fine = new Fine(studId);
                 databaseInstance.addFineToStudent(studId , fine);
 
+                hr();
                 cout << "Fine Added sucessfully\n";
+                hr();
             }
 
             else if(Option == "3")
             {
                 vector<Student*> studentData = databaseInstance.getStudents();
                 cout << "Students List : \n";
+                hr();
                 for(auto it : studentData)
                 {
                     cout << it->getUserId() << "\n";
                 }
+                hr();
                 cout << "Enter StudentId : ";
                 string studId;
                 getline(cin , studId , '\n');
@@ -95,12 +101,14 @@ class AdminUi{
                         break;
                     }
                 }
+                hr();
                 int size = data.size();
                 for(int i=0; i<size; i++)
                 {
                     cout << "ID : "<<i << "\n";
                     data[i]->explainSelf();
                 }
+                hr();
 
                 string id;
                 cout << "Enter Id to edit : ";
@@ -116,10 +124,12 @@ class AdminUi{
             {
                 vector<Student*> studentData = databaseInstance.getStudents();
                 cout << "Students List : \n";
+                hr();
                 for(auto it : studentData)
                 {
                     cout << it->getUserId() << "\n";
                 }
+                hr();
                 cout << "Enter StudentId : ";
                 string studId;
                 getline(cin , studId , '\n');
@@ -133,12 +143,15 @@ class AdminUi{
                         break;
                     }
                 }
+                hr();
+                ahr("FINE DETAILS")
                 int size = data.size();
                 for(int i=0; i<size; i++)
                 {
                     cout << "ID : "<<i << "\n";
                     data[i]->explainSelf();
                 }
+                hr();
 
                 string id;
                 cout << "Enter Id to edit : ";
@@ -212,12 +225,15 @@ class AdminUi{
                             break;
                         }
                     }
+                    hr();
+                    ahr("FINE DETAILS");
                     int size = data.size();
                     for(int i=0; i<size; i++)
                     {
                         cout << "ID : "<<i << "\n";
                         data[i]->explainSelf();
                     }
+                    hr();
                 }
                 else if(Option == "3")
                 {
@@ -226,14 +242,17 @@ class AdminUi{
                     int start = d->numFormat;
                     cout << "Enter End date : ";
                     Date *d2 = new Date();
-                    int end = d->numFormat;
+                    int end = d2->numFormat;
 
                     auto ans = databaseInstance.fromToDate(start , end);
-
+                    // cout << "START : "<<start << " END : "<<end << "\n";
+                    hr();
+                    ahr("FINE DETAILS");
                     for(auto it : ans)
                     {   
                         it->explainSelf();
                     }
+                    hr();
                 }
                 else{
                     string type;
@@ -245,7 +264,7 @@ class AdminUi{
                     int start = d->numFormat;
                     cout << "Enter End date : ";
                     Date *d2 = new Date();
-                    int end = d->numFormat;
+                    int end = d2->numFormat;
 
                     vector<Fine*> ans = databaseInstance.getFineByType(type);
                     cout << "Data \n";

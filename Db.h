@@ -115,6 +115,7 @@ class Db{
         {
             for(auto it2 : it.second)
             {
+                // cout << it2->getDateAssigned() << ": Date\n";
                 if(it2->getDateAssigned() >= start && it2->getDateAssigned() <= end)
                 {
                     ans.push_back(it2);

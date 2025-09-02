@@ -5,7 +5,7 @@ It supports Admin, Cashier, and Student roles, each with specific permissions.
 
 1. Admin (40 Marks) 
 
-• View all student payments – 5 Marks/// 
+• View all student payments – 5 Marks`/// 
 
 • Filter payments by fine type – 5 Marks 
 • Filter payments by student – 5 Marks 
@@ -46,3 +46,31 @@ It supports Admin, Cashier, and Student roles, each with specific permissions.
  
 • User Login (role-based access) – 5 Marks ///
 
+
+
+
+input
+1
+2
+gopinath
+123
+123
+2
+gopal
+123
+123
+1
+gops
+123
+123
+0
+2
+gopinath
+123
+2
+STUDENT_1
+14
+10
+2005
+12
+dicipline
