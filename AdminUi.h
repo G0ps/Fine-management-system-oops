@@ -64,7 +64,7 @@ class AdminUi{
                 vector<Student*> studentData = databaseInstance.getStudents();
                 cout << "Students List : \n";
                 hr();
-                ahr("STUDENT DETAIL")
+                ahr("STUDENT DETAIL");
                 for(auto it : studentData)
                 {
                     cout << it->getUserId() << "\n";
@@ -88,7 +88,7 @@ class AdminUi{
                 vector<Student*> studentData = databaseInstance.getStudents();
                 cout << "Students List : \n";
                 hr();
-                ahr("STUDENT DETAIL")
+                ahr("STUDENT DETAIL");
                 for(auto it : studentData)
                 {
                     cout << it->getUserId() << "\n";
@@ -150,7 +150,7 @@ class AdminUi{
                     }
                 }
                 hr();
-                ahr("FINE DETAILS")
+                ahr("FINE DETAILS");
                 int size = data.size();
                 for(int i=0; i<size; i++)
                 {
@@ -204,7 +204,7 @@ class AdminUi{
                     vector<Fine*> ans = databaseInstance.getFineByType(type);
                     cout << "Data \n";
                     hr();
-                    ahr("FINE DETAILS")
+                    ahr("FINE DETAILS");
                     for(auto it : ans)
                     {
                         it->explainSelf();

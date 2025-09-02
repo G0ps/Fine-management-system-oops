@@ -61,7 +61,7 @@ class CashierUi{
                 vector<Student*> studentData = databaseInstance.getStudents();
                 cout << "Students List : \n";
                 hr();
-                ahr("USER DETAILS")
+                ahr("USER DETAILS");
                 for(auto it : studentData)
                 {
                     cout << it->getUserId() << "\n";
@@ -127,7 +127,7 @@ class CashierUi{
             {
                 vector<Student*> studentData = databaseInstance.getStudents();
                 hr();
-                ahr("Students List ")
+                ahr("Students List ");
                 for(auto it : studentData)
                 {
                     cout << it->getUserId() << "\n";
